@@ -107,6 +107,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Start\NinjectConfigurator.cs" />
     <Compile Include="App_Start\NinjectWebCommon.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\V1\TasksController.cs" />
@@ -130,6 +131,10 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\WebApi2Book.Common\WebApi2Book.Common.csproj">
+      <Project>{aee14f73-aded-41db-8cdd-831022ca42c5}</Project>
+      <Name>WebApi2Book.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\WebApi2Book.Web.Api.Models\WebApi2Book.Web.Api.Models.csproj">
       <Project>{ab0e9ed8-a44e-4519-a996-f12ffc821ebe}</Project>
       <Name>WebApi2Book.Web.Api.Models</Name>

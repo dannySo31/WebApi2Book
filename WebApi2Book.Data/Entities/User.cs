@@ -5,7 +5,7 @@ using System.Text;
 
 namespace WebApi2Book.Data.Entities
 {
-    public class User
+    public class User:IVersionedEntity
     {
         public long UserId { get; set; }
         public string FirstName { get; set; }
