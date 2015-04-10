@@ -12,5 +12,6 @@ namespace WebApi2Book.Data.Entities
         public string LastName { get; set; }
         public string UserName { get; set; }
         public byte[] Version { get; set; }
+        public virtual List<Task> Tasks { get; set; }
     }
 }

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Web;
 using WebApi2Book.Common;
 using WebApi2Book.Common.Logging;
+using WebApi2Book.Data.SqlServer;
 
 namespace WebApi2Book.Web.Api
 {
@@ -18,7 +19,14 @@ namespace WebApi2Book.Web.Api
         private void AddBindings(IKernel container)
         {
             ConfigureLog4net(container);
+            ConfigureEntityFramework(container);
             container.Bind<IDateTime>().To<DateTimeAdapter>().InSingletonScope();
+
+        }
+
+        private void ConfigureEntityFramework(IKernel container)
+        {
+            
 
         }
 

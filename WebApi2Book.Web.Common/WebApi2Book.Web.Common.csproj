@@ -77,10 +77,19 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Routing\ApiVersion1RoutePrefixAttribute.cs" />
     <Compile Include="Routing\ApiVersionConstraint.cs" />
+    <Compile Include="SimpleExceptionLogger.cs" />
+    <Compile Include="SimpleTraceWriter.cs" />
+    <Compile Include="WebContainerManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WebApi2Book.Common\WebApi2Book.Common.csproj">
+      <Project>{aee14f73-aded-41db-8cdd-831022ca42c5}</Project>
+      <Name>WebApi2Book.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
